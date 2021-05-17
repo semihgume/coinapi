@@ -46,7 +46,12 @@
 
         const now = moment();
         let timeNow = moment().locale('tr').format('H:mm:ss - DD/MM/YYYY');
-        $('.time').text(timeNow);
+        $('.time').text(timeNow); 
+        
+        setInterval(function() { 
+            let timeNow = moment().locale('tr').format('H:mm:ss - DD/MM/YYYY');
+            $('.time').text(timeNow);    
+        }, 1000);
 
         $.ajax({
             url: 'https://rest.coinapi.io/v1/assets?filter_asset_id=BTC;ETH;XRP;DOGE',
