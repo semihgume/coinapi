@@ -1,2 +1,2 @@
 # coinapi
-<h1>semihgume.github.io/coinapi</h1>
+<h1>Coin API with Javascript</h1>
